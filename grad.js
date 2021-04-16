@@ -8,13 +8,11 @@ function PG(){
     c = (a/b)*100;
 
   document.getElementById('result').value=c;
-  if (c==100 && c>=90){
+  
+  if(c<=100 && c>=90){
       console.log("O");
       document.getElementById('grade').value = 'O';
-
   }
-  
-  
   else if ( c<=90 && c>=65)
   {
       console.log("A");
@@ -28,11 +26,11 @@ function PG(){
   }
   else if ( c<=50 && c>=35)
   {
-      console.log("B");
+      console.log("c");
       document.getElementById('grade').value = 'c';
   }
 
-  else {
+  else  {
       console.log("fail");
       document.getElementById('grade').value = 'fail';
   }
